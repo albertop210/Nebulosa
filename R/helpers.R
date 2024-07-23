@@ -64,7 +64,7 @@
 
 
             if (combine) {
-                p <- pz
+                p <- wrap_plots(p) 
             } else {
                 p <- c(p, list(pz))
                 names(p) <- c(features, joint_label)
